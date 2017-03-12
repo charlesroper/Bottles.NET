@@ -7,8 +7,8 @@
     <ProjectGuid>{ABE21435-D326-40A7-AAC2-E1BC8F6714E6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_99BottlesOfOOP_dotnet.Tests</RootNamespace>
-    <AssemblyName>99BottlesOfOOP_dotnet.Tests</AssemblyName>
+    <RootNamespace>Bottles.NET.Tests</RootNamespace>
+    <AssemblyName>Bottle.NET.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
