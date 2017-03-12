@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "99BottlesOfOOP_dotnet", "99BottlesOfOOP_dotnet\99BottlesOfOOP_dotnet.csproj", "{227A7361-BAB1-4C15-AAB4-030278DBAD8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bottles.NET", "Bottles.NET\Bottles.NET.csproj", "{227A7361-BAB1-4C15-AAB4-030278DBAD8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "99BottlesOfOOP_dotnet.Tests", "99BottlesOfOOP_dotnet.Tests\99BottlesOfOOP_dotnet.Tests.csproj", "{ABE21435-D326-40A7-AAC2-E1BC8F6714E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bottles.NET.Tests", "Bottles.NET.Tests\Bottles.NET.Tests.csproj", "{ABE21435-D326-40A7-AAC2-E1BC8F6714E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
