@@ -1,4 +1,3 @@
-using System.Runtime.InteropServices;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -6,13 +5,6 @@ namespace Bottles.NET.Tests
 {
     public class BottlesTest
     {
-        private readonly ITestOutputHelper _output;
-
-        public BottlesTest(ITestOutputHelper output)
-        {
-            this._output = output;
-        }
-
         [Fact]
         public void TestTheFirstVerse()
         {
