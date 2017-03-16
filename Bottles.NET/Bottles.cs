@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Bottles.NET
 {
@@ -38,7 +39,13 @@ namespace Bottles.NET
 
         public string Verses(int start, int end)
         {
-            return null;
+            var verses = new List<string>();
+            for (int i = start; i >= end; i--)
+            {
+                verses.Add(Verse(i));
+            }
+            var br = Environment.NewLine;
+            return string.Join(br + br, verses.ToArray());
         }
     }
 }

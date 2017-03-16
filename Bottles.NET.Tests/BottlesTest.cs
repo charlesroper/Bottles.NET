@@ -74,7 +74,7 @@ Go to the store and buy some more, 99 bottles of beer on the wall.".Trim();
             Assert.Equal(expected, actual);
         }
 
-        [Fact(Skip = "not ready")]
+        [Fact]
         public void TestACoupleOfVerses()
         {
             var sut = new Bottles();
