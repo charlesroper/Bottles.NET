@@ -9,29 +9,29 @@ namespace Bottles.NET
         {
             int nextVerse = currentVerse - 1;
             var verse = "";
+            var br = Environment.NewLine;
 
-            if (currentVerse > 2)
+            switch (currentVerse)
             {
-                verse = $"{currentVerse} bottles of beer on the wall, {currentVerse} bottles of beer.{Environment.NewLine}" +
-                        $"Take one down and pass it around, {nextVerse} bottles of beer on the wall.";
-            }
+                case 2:
+                    verse = $"{currentVerse} bottles of beer on the wall, {currentVerse} bottles of beer.{br}" +
+                            $"Take one down and pass it around, {nextVerse} bottle of beer on the wall.";
+                    break;
 
-            if (currentVerse == 2)
-            {
-                verse = $"{currentVerse} bottles of beer on the wall, {currentVerse} bottles of beer.{Environment.NewLine}" +
-                        $"Take one down and pass it around, {nextVerse} bottle of beer on the wall.";
-            }
+                case 1:
+                    verse = $"{currentVerse} bottle of beer on the wall, {currentVerse} bottle of beer.{br}" +
+                             "Take it down and pass it around, no more bottles of beer on the wall.";
+                    break;
 
-            if (currentVerse == 1)
-            {
-                verse = $"{currentVerse} bottle of beer on the wall, {currentVerse} bottle of beer.{Environment.NewLine}" +
-                         "Take it down and pass it around, no more bottles of beer on the wall.";
-            }
+                case 0:
+                    verse = $"No more bottles of beer on the wall, no more bottles of beer.{br}" +
+                             "Go to the store and buy some more, 99 bottles of beer on the wall.";
+                    break;
 
-            if (currentVerse == 0)
-            {
-                verse = $"No more bottles of beer on the wall, no more bottles of beer.{Environment.NewLine}" +
-                         "Go to the store and buy some more, 99 bottles of beer on the wall.";
+                default:
+                    verse = $"{currentVerse} bottles of beer on the wall, {currentVerse} bottles of beer.{br}" +
+                            $"Take one down and pass it around, {nextVerse} bottles of beer on the wall.";
+                    break;
             }
             
             return verse;
