@@ -33,11 +33,11 @@ namespace Bottles.NET
                 verse = $"No more bottles of beer on the wall, no more bottles of beer.{Environment.NewLine}" +
                          "Go to the store and buy some more, 99 bottles of beer on the wall.";
             }
-
+            
             return verse;
         }
 
-        public string Verses(int start, int end)
+        public string Verses(int start=99, int end=0)
         {
             var verses = new List<string>();
             for (int i = start; i >= end; i--)
