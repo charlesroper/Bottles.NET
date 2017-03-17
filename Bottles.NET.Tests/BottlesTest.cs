@@ -96,7 +96,7 @@ Take one down and pass it around, 97 bottles of beer on the wall.".Trim();
         {
             var sut = new Bottles();
 
-            var actual = sut.Verses(2);
+            var actual = sut.Verses(2, 0);
 
             var expected = @"
 2 bottles of beer on the wall, 2 bottles of beer.
@@ -116,7 +116,7 @@ Go to the store and buy some more, 99 bottles of beer on the wall.".Trim();
         {
             var sut = new Bottles();
 
-            var actual = sut.Verses();
+            var actual = sut.Song();
 
             var expected = @"
 99 bottles of beer on the wall, 99 bottles of beer.

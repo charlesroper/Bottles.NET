@@ -37,7 +37,7 @@ namespace Bottles.NET
             return verse;
         }
 
-        public string Verses(int start=99, int end=0)
+        public string Verses(int start, int end)
         {
             var verses = new List<string>();
             for (int i = start; i >= end; i--)
@@ -46,6 +46,11 @@ namespace Bottles.NET
             }
             var br = Environment.NewLine;
             return string.Join(br + br, verses.ToArray());
+        }
+
+        public string Song()
+        {
+            return Verses(99, 0);
         }
     }
 }
